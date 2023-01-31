@@ -13,35 +13,38 @@
   <body>
     <div class="container-fluid min-vh-100">
       <div class="container-lg">
-        <header>
+        <header class="header__container shadow">
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <!-- <div class="container-fluid"> -->
             <a class="navbar-brand fw-bold" href="#">Alex Turnwall</a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mt-3 ms-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Work</a>
-                  <div class="nav-underline"></div>
+                <li class="nav__item">
+                  <a class="nav-link" aria-current="page" href="#work-page"
+                    >Work</a
+                  >
+                  <div class="nav__underline"></div>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Blog</a>
-                  <div class="nav-underline"></div>
+                <li class="nav__item">
+                  <a class="nav-link" href="#blog-page">Blog</a>
+                  <div class="nav__underline"></div>
                 </li>
-                <li class="nav-item">
+                <li class="nav__item">
                   <a class="nav-link" href="#">About</a>
-                  <div class="nav-underline"></div>
+                  <div class="nav__underline"></div>
                 </li>
               </ul>
               <!-- </div> -->
             </div>
           </nav>
-          <hr lass="border-5 border-top border-danger" />
+          <div class="navbar__underline"></div>
         </header>
-        <main>
+
+        <main class="main__container">
           <section name="home-page">
             <div class="container-lg">
               <div class="col">
-                <h1 class="fw-bold fs-1 mt-4 mb-4 heading-h1">
+                <h1 class="fw-bold fs-1 mt-4 mb-4 block__h1--size">
                   Designer & <br />
                   Product Strategist
                 </h1>
@@ -56,207 +59,809 @@
                 <div class="col-md-5 m-md-5 mt-3 mb-3 description-text">
                   I've spent over a decade working with teams to ship products
                   that delight users and advance organizations’ goals.
-                  <a href="#" class="section-link"> Learn More</a>
+                  <a
+                    href="#"
+                    class="block__link--animation block__link--underline"
+                  >
+                    Learn More</a
+                  >
                 </div>
                 <div class="col-md-5 m-md-5 mt-3 mb-3 description-text">
                   Staff UX Designer at Verily. Previously Head of Design
-                  <a href="#" class="section-link">@Admithub</a>, Chief Design
-                  Officer <a href="#" class="section-link"> @BevSpot</a>,
-                  Lecturer @Northeastern
+                  <a
+                    href="#"
+                    class="block__link--animation block__link--underline"
+                    >@Admithub</a
+                  >, Chief Design Officer
+                  <a
+                    href="#"
+                    class="block__link--animation block__link--underline"
+                  >
+                    @BevSpot</a
+                  >, Lecturer @Northeastern
                 </div>
               </div>
             </div>
             <div class="thick-border"></div>
-            <div class="mt-3 mb-3 fw-bold">
-              Select Work
-              <a href="#" class="section-link fw-normal">All Work</a>
+            <div class="row">
+              <div class="col-xs-12 col-md-2">
+                <div class="postBlock__side--rotate">
+                  <div class="mt-3 mb-3 fw-bold d-md-flex flex-column">
+                    Select Work
+                    <span
+                      ><a
+                        href="#"
+                        class="block__link--animation block__link--underline fw-normal w-auto p-0 m-0"
+                        >All Work</a
+                      ></span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-10">
+                <div
+                  class="row row-cols-1 g-4 mt-1 d-flex justify-content-center mt-3"
+                >
+                  <div class="card border-0 mb-3">
+                    <div class="row g-0">
+                      <div class="col-md-6">
+                        <img
+                          src="https://www.turnwall.com/wp-content/uploads/2021/05/hero-e1627578686659-750x584.png.webp"
+                          class="p-3 w-100"
+                          alt="admithub"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <p class="text-muted">Case Study</p>
+                          <h5 class="card-title fw-bold fs-3 fs-md-2">
+                            AdmitHub AI Suite
+                          </h5>
+                          <p class="card-text fs-5">
+                            Leading product design and user research of the SaaS
+                            platform helping educators use behavioral science to
+                            nudge students toward success
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr />
+                </div>
+                <div
+                  class="row row-cols-1 g-4 mt-1 d-flex justify-content-center"
+                >
+                  <div class="card border-0 mb-3">
+                    <div class="row g-0">
+                      <div class="col-md-6">
+                        <img
+                          src="https://www.turnwall.com/wp-content/uploads/2021/04/brewery-hero-714x600.png.webp"
+                          class="p-3 w-100"
+                          alt=" Connected Proof"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <p class="text-muted">Case Study</p>
+                          <h5 class="card-title fw-bold fs-3 fs-md-2">
+                            Connected Proof
+                          </h5>
+                          <p class="card-text fs-5">
+                            Designing the cross-device software for an
+                            industrial IoT platform to help make food and
+                            beverage production more sustainable
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr />
+                </div>
+                <div
+                  class="row row-cols-1 g-4 mt-1 d-flex justify-content-center"
+                >
+                  <div class="card border-0 mb-3">
+                    <div class="row g-0">
+                      <div class="col-md-6">
+                        <img
+                          src="https://www.turnwall.com/wp-content/uploads/2019/04/bs-hero-750x387.png"
+                          class="p-3 w-100"
+                          alt="BevSpot Inventory"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <p class="text-muted">Case Study</p>
+                          <h5 class="card-title fw-bold fs-3 fs-md-2">
+                            BevSpot Inventory
+                          </h5>
+                          <p class="card-text fs-5">
+                            Leading the UX evolution of an industry-favorite app
+                            by working closely with customers and “taking over”
+                            their jobs for the day
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <hr lass="border-5 border-top border-danger" />
-            <div class="row row-cols-1 g-4 mt-2 d-flex justify-content-center">
-              <div class="col-12 col-md-10">
-                <div class="card border-0 mb-3">
-                  <div class="row g-0">
-                    <div class="col-md-4">
+            <div class="thick-border"></div>
+            <div class="row">
+              <div class="col-xs-12 col-md-2">
+                <div class="postBlock__side--rotate">
+                  <div class="mt-3 mb-3 fw-bold d-md-flex flex-column">
+                    Recent Posts
+                    <span
+                      ><a
+                        href="#"
+                        class="block__link--animation block__link--underline fw-normal w-auto p-0 m-0"
+                        >All Posts</a
+                      ></span
+                    >
+                  </div>
+                  <hr class="d-md-none" />
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-10">
+                <div
+                  class="row row-cols-1 g-4 mt-1 d-flex justify-content-center mt-3"
+                >
+                  <div
+                    class="row justify-content-center align-items-center p-3"
+                  >
+                    <div class="thick-border mb-4"></div>
+                    <div class="col-12 col-md-9">
+                      <p class="text-muted">DESIGN</p>
+                      <h5 class="card-title fw-bold fs-4 fs-md-3">
+                        Bicycles are my design inspiration—a Rapha 5×5 talk
+                      </h5>
+                      <p class="description-text">
+                        I was recently invited to speak at an event
+                        called&nbsp;Rapha 5×5: Intervals on Design at Fresh
+                        Tilled Soil, a local design consultancy. It’s a
+                        traveling series of design talks that Rapha runs in
+                        different cities, and here’s the schtick: “5×5:
+                        Intervals on Design, a rapid-fire design talk where five
+                        creatives will talk for five minutes…
+                      </p>
+                      <p class="text-muted">9 minute read</p>
+                    </div>
+                    <div class="col-md-3">
                       <img
-                        src="https://www.turnwall.com/wp-content/uploads/2021/05/hero-e1627578686659-750x584.png.webp"
-                        class="p-3 w-100"
+                        src="https://www.turnwall.com/wp-content/uploads/2016/10/Artboard-1-360x240.png"
+                        class="post-img"
                         alt="admithub"
                       />
                     </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <p class="text-muted">Case Study</p>
-                        <h5 class="card-title fw-bold fs-3 fs-md-2">
-                          AdmitHub AI Suite
-                        </h5>
-                        <p class="card-text fs-5">
-                          Leading product design and user research of the SaaS
-                          platform helping educators use behavioral science to
-                          nudge students toward success
-                        </p>
-                      </div>
-                    </div>
                   </div>
+                  <hr />
                 </div>
-                <hr lass="border-5 border-top border-danger " />
-              </div>
-            </div>
-            <div class="row row-cols-1 g-4 d-flex justify-content-center">
-              <div class="col-12 col-md-10 pt-3">
-                <div class="card border-0 mb-3">
-                  <div class="row g-0">
-                    <div class="col-md-4">
+                <div
+                  class="row row-cols-1 g-4 mt-1 d-flex justify-content-center"
+                >
+                  <div
+                    class="row justify-content-center align-items-center p-3"
+                  >
+                    <div class="col-12 col-md-9">
+                      <p class="text-muted">Adventure</p>
+                      <h5 class="card-title fw-bold fs-4 fs-md-3">
+                        Talking to a giant tanker from a little plastic boat
+                      </h5>
+                      <p class="description-text">
+                        It’s kayaking season here in New England, and as I was
+                        returning to the water this year I realized I needed to
+                        reacquaint myself with VHF radio usage. So I’m going to
+                        share this story from last summer in hopes that it helps
+                        some other kayakers in a similar situation, as I haven’t
+                        found a ton…
+                      </p>
+                      <p class="text-muted">9 minute read</p>
+                    </div>
+                    <div class="col-md-3">
                       <img
-                        src="https://www.turnwall.com/wp-content/uploads/2021/04/brewery-hero-714x600.png.webp"
-                        class="p-3 w-100"
-                        alt=" Connected Proof"
+                        src="https://www.turnwall.com/wp-content/uploads/2014/06/IMG_4040-360x240.jpg"
+                        class="post-img"
+                        alt="admithub"
                       />
                     </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <p class="text-muted">Case Study</p>
-                        <h5 class="card-title fw-bold fs-3 fs-md-2">
-                          Connected Proof
-                        </h5>
-                        <p class="card-text fs-5">
-                          Designing the cross-device software for an industrial
-                          IoT platform to help make food and beverage production
-                          more sustainable
-                        </p>
-                      </div>
-                    </div>
                   </div>
+                  <hr />
                 </div>
-                <hr lass="border-5 border-top border-danger " />
-              </div>
-            </div>
-            <div class="row row-cols-1 g-4 d-flex justify-content-center">
-              <div class="col-12 col-md-10 pt-3">
-                <div class="card border-0 mb-3">
-                  <div class="row g-0">
-                    <div class="col-md-4">
+                <div
+                  class="row row-cols-1 g-4 mt-1 d-flex justify-content-center"
+                >
+                  <div
+                    class="row justify-content-center align-items-center p-3"
+                  >
+                    <div class="col-12 col-md-9">
+                      <p class="text-muted">
+                        <span class="temp">Case Study</span>
+                      </p>
+                      <h5 class="card-title fw-bold fs-4 fs-md-3">
+                        AdmitHub AI Suite
+                      </h5>
+                      <p class="description-text">
+                        I was recently invited to speak at an event
+                        called&nbsp;Rapha 5×5: Intervals on Design at Fresh
+                        Tilled Soil, a local design consultancy. It’s a
+                        traveling series of design talks that Rapha runs in
+                        different cities, and here’s the schtick: “5×5:
+                        Intervals on Design, a rapid-fire design talk where five
+                        creatives will talk for five minutes…
+                      </p>
+                      <p class="text-muted">9 minute read</p>
+                    </div>
+                    <div class="col-md-3">
                       <img
-                        src="https://www.turnwall.com/wp-content/uploads/2019/04/bs-hero-750x387.png"
-                        class="p-3 w-100"
-                        alt="BevSpot Inventory"
+                        src="https://www.turnwall.com/wp-content/uploads/2016/10/Artboard-1-360x240.png"
+                        class="post-img"
+                        alt="admithub"
                       />
                     </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <p class="text-muted">Case Study</p>
-                        <h5 class="card-title fw-bold fs-3 fs-md-2">
-                          BevSpot Inventory
-                        </h5>
-                        <p class="card-text fs-5">
-                          Leading the UX evolution of an industry-favorite app
-                          by working closely with customers and “taking over”
-                          their jobs for the day
-                        </p>
-                      </div>
-                    </div>
                   </div>
                 </div>
-                <hr lass="border-5 border-top border-danger " />
+              </div>
+            </div>
+            <hr />
+          </section>
+          <section name="work-page" id="work-page">
+            <div class="container-lg mb-5 mt-5">
+              <div class="col">
+                <h1 class="fw-bold fs-1 mt-4 mb-4 block__h1--size">Work</h1>
+              </div>
+              <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+                <h3 class="fs-4">
+                  Weaving together UX, UI, and brand design with product
+                  management and frontend development.
+                </h3>
               </div>
             </div>
             <div class="thick-border"></div>
-            <div class="mt-3 mb-3 fw-bold">
-              Recent Posts
-              <a href="#" class="section-link fw-normal">All Posts</a>
-            </div>
-            <hr lass="border-5 border-top border-danger" />
-            <div class="row row-cols-1 g-4 mt-2 d-flex justify-content-center">
-              <div class="card border-0 p-3">
-                <div class="row justify-content-center align-items-center">
-                  <div class="col-12 col-md-3">
-                    <p class="text-muted">DESIGN</p>
-                    <h5 class="card-title fw-bold fs-4 fs-md-3">
-                      Bicycles are my design inspiration—a Rapha 5×5 talk
-                    </h5>
-                  </div>
-                  <div class="col-12 col-md-6 description-text">
-                    <p>
-                      I was recently invited to speak at an event
-                      called&nbsp;Rapha 5×5: Intervals on Design at Fresh Tilled
-                      Soil, a local design consultancy. It’s a traveling series
-                      of design talks that Rapha runs in different cities, and
-                      here’s the schtick: “5×5: Intervals on Design, a
-                      rapid-fire design talk where five creatives will talk for
-                      five minutes…
-                    </p>
-                  </div>
-                  <div class="col-md-3">
-                    <img
-                      src="https://www.turnwall.com/wp-content/uploads/2016/10/Artboard-1-360x240.png"
-                      class="post-img"
-                      alt="admithub"
-                    />
+            <div class="row">
+              <div class="col-xs-12 col-md-2 mt-3">
+                <div class="d-flex flex-column">
+                  <div class="mt-1 mb-2 fw-bold fs-5">Case Studies</div>
+                  <div>
+                    <a
+                      href="#"
+                      class="work__link--reset fw-normal w-auto p-0 m-0 fs-6"
+                      >Longform explorations of UX process and design
+                      projects</a
+                    >
                   </div>
                 </div>
               </div>
-              <hr lass="border-5 border-top border-danger " />
-            </div>
-            <div class="row row-cols-1 g-4 mt-1 d-flex justify-content-center">
-              <div class="card border-0 p-3">
-                <div class="row justify-content-center align-items-center">
-                  <div class="col-12 col-md-3">
-                    <p class="text-muted">Adventure</p>
-                    <h5 class="card-title fw-bold fs-4 fs-md-3">
-                      Talking to a giant tanker from a little plastic boat
-                    </h5>
+              <div class="col-xs-12 col-md-10">
+                <div
+                  class="row row-cols-1 g-4 mt-1 d-flex justify-content-center mt-3"
+                >
+                  <div class="card border-0 mb-3">
+                    <div class="row g-0">
+                      <div class="col-md-7">
+                        <img
+                          src="https://www.turnwall.com/wp-content/uploads/2021/05/hero-e1627578686659-750x584.png.webp"
+                          class="p-3 w-100"
+                          alt="admit hub"
+                        />
+                      </div>
+                      <div class="col-md-5">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold fs-3 fs-md-2">
+                            AdmitHub AI Suite
+                          </h5>
+                          <p class="card-text fs-5">
+                            Leading product design and user research of the SaaS
+                            platform helping educators use behavioral science to
+                            nudge students toward success
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-12 col-md-6 description-text">
-                    <p>
-                      It’s kayaking season here in New England, and as I was
-                      returning to the water this year I realized I needed to
-                      reacquaint myself with VHF radio usage. So I’m going to
-                      share this story from last summer in hopes that it helps
-                      some other kayakers in a similar situation, as I haven’t
-                      found a ton…
-                    </p>
+                  <hr />
+                </div>
+                <div
+                  class="row row-cols-1 g-4 mt-1 d-flex justify-content-center"
+                >
+                  <div class="card border-0 mb-3">
+                    <div class="row g-0">
+                      <div class="col-md-7">
+                        <img
+                          src="https://www.turnwall.com/wp-content/uploads/2021/04/brewery-hero-714x600.png.webp"
+                          class="p-3 w-100"
+                          alt=" Connected Proof"
+                        />
+                      </div>
+                      <div class="col-md-5">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold fs-3 fs-md-2">
+                            Connected Proof
+                          </h5>
+                          <p class="card-text fs-5">
+                            Designing the cross-device software for an
+                            industrial IoT platform to help make food and
+                            beverage production more sustainable
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-md-3">
-                    <img
-                      src="https://www.turnwall.com/wp-content/uploads/2014/06/IMG_4040-360x240.jpg"
-                      class="post-img"
-                      alt="admithub"
-                    />
+                  <hr />
+                </div>
+                <div
+                  class="row row-cols-1 g-4 mt-1 d-flex justify-content-center"
+                >
+                  <div class="card border-0 mb-3">
+                    <div class="row g-0">
+                      <div class="col-md-7">
+                        <img
+                          src="https://www.turnwall.com/wp-content/uploads/2019/04/bs-hero-750x387.png"
+                          class="p-3 w-100"
+                          alt="BevSpot Inventory"
+                        />
+                      </div>
+                      <div class="col-md-5">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold fs-3 fs-md-2">
+                            BevSpot Inventory
+                          </h5>
+                          <p class="card-text fs-5">
+                            Leading the UX evolution of an industry-favorite app
+                            by working closely with customers and “taking over”
+                            their jobs for the day
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <hr lass="border-5 border-top border-danger " />
             </div>
-            <div class="row row-cols-1 g-4 mt-1 d-flex justify-content-center">
-              <div class="card border-0 p-3">
-                <div class="row justify-content-center align-items-center">
-                  <div class="col-12 col-md-3">
-                    <p class="text-muted">Case Study</p>
-                    <h5 class="card-title fw-bold fs-3 fs-md-2">
-                      AdmitHub AI Suite
-                    </h5>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <p>
-                      I was recently invited to speak at an event
-                      called&nbsp;Rapha 5×5: Intervals on Design at Fresh Tilled
-                      Soil, a local design consultancy. It’s a traveling series
-                      of design talks that Rapha runs in different cities, and
-                      here’s the schtick: “5×5: Intervals on Design, a
-                      rapid-fire design talk where five creatives will talk for
-                      five minutes…
-                    </p>
-                  </div>
-                  <div class="col-md-3">
-                    <img
-                      src="https://www.turnwall.com/wp-content/uploads/2016/10/Artboard-1-360x240.png"
-                      class="post-img"
-                      alt="admithub"
-                    />
+            <div class="thick-border"></div>
+            <div class="row">
+              <div class="col-xs-12 col-md-2 mt-3">
+                <div class="d-flex flex-column">
+                  <div class="mt-1 mb-2 fw-bold fs-5">Archive & Oddities</div>
+                  <div>
+                    <a
+                      href="#"
+                      class="work__link--reset fw-normal w-auto p-0 m-0 fs-6"
+                      >Visual snapshots of past projects and side-hustles</a
+                    >
                   </div>
                 </div>
               </div>
-              <hr lass="border-5 border-top border-danger " />
+              <div class="col-xs-12 col-md-10">
+                <div class="row">
+                  <div class="col-6 col-md-4 p-2">
+                    <div class="card border-0 pb-3 work__card--shadow">
+                      <img
+                        src="https://www.turnwall.com/wp-content/uploads/2021/05/lp-hero-750x383.png"
+                        alt="love pop"
+                        class="image-fluid block__img--color m-3"
+                      />
+                      <div class="card-body">
+                        <p class="card-text">Lovepop</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 p-2">
+                    <div class="card border-0 pb-3 work__card--shadow">
+                      <img
+                        src="https://www.turnwall.com/wp-content/uploads/2019/02/bs-overview-hero-750x387.png"
+                        alt="BevSpot Overview"
+                        class="image-fluid block__img--color m-3"
+                      />
+                      <div class="card-body">
+                        <p class="card-text">BevSpot Overview</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 p-2">
+                    <div class="card border-0 pb-3 work__card--shadow">
+                      <img
+                        src="https://www.turnwall.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-18-at-6.57.06-PM-750x415.png"
+                        alt="MA Scenic Byways"
+                        class="image-fluid block__img--color m-3"
+                      />
+                      <div class="card-body">
+                        <p class="card-text">MA Scenic Byways</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 p-2">
+                    <div class="card border-0 pb-3 work__card--shadow">
+                      <img
+                        src="https://www.turnwall.com/wp-content/uploads/2013/07/grubstreet.gif"
+                        alt=" GrubStreet "
+                        class="image-fluid block__img--color m-3"
+                      />
+                      <div class="card-body">
+                        <p class="card-text">GrubStreet</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 p-2">
+                    <div class="card border-0 pb-3 work__card--shadow">
+                      <img
+                        src="https://www.turnwall.com/wp-content/uploads/2013/07/newsletter-folded-750x528.jpg"
+                        alt="CAMD @ Northeastern "
+                        class="image-fluid block__img--color m-3"
+                      />
+                      <div class="card-body">
+                        <p class="card-text">CAMD @ Northeastern</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 p-2">
+                    <div class="card border-0 pb-3 work__card--shadow">
+                      <img
+                        src="https://www.turnwall.com/wp-content/uploads/2009/07/idea.gif"
+                        alt="Logos"
+                        class="image-fluid block__img--color m-3"
+                      />
+                      <div class="card-body">
+                        <p class="card-text">Logos</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 p-2">
+                    <div class="card border-0 pb-3 work__card--shadow">
+                      <img
+                        src="https://www.turnwall.com/wp-content/uploads/2013/07/1-3device_0-750x528.jpg"
+                        alt=" News @ Northeastern "
+                        class="image-fluid block__img--color m-3"
+                      />
+                      <div class="card-body">
+                        <p class="card-text">News @ Northeastern</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 p-2">
+                    <div class="card border-0 pb-3 work__card--shadow">
+                      <img
+                        src="https://www.turnwall.com/wp-content/uploads/2013/07/site1-750x528.jpg"
+                        alt=" Various Websites "
+                        class="image-fluid block__img--color m-3"
+                      />
+                      <div class="card-body">
+                        <p class="card-text">Various Websites</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 p-2">
+                    <div class="card border-0 pb-3 work__card--shadow">
+                      <img
+                        src="https://www.turnwall.com/wp-content/uploads/2013/07/acadia-shirt-750x528.jpg"
+                        alt=" Various Illustrations "
+                        class="image-fluid block__img--color m-3"
+                      />
+                      <div class="card-body">
+                        <p class="card-text">Various Illustrations</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 p-2">
+                    <div class="card border-0 pb-3 work__card--shadow">
+                      <img
+                        src="https://www.turnwall.com/wp-content/uploads/2013/07/trainers_kit-750x500.jpg"
+                        alt=" Various Print Projects "
+                        class="image-fluid block__img--color m-3"
+                      />
+                      <div class="card-body">
+                        <p class="card-text">Various Print Projects</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 p-2">
+                    <div class="card border-0 pb-3 work__card--shadow">
+                      <img
+                        src="https://www.turnwall.com/wp-content/uploads/2013/07/01logo1-750x528.jpg"
+                        alt=" APE SYSTEM "
+                        class="image-fluid block__img--color m-3"
+                      />
+                      <div class="card-body">
+                        <p class="card-text">APE SYSTEM</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+            <hr />
+          </section>
+          <section name="work-page" id="blog-page">
+            <div class="container-lg mb-5 mt-5">
+              <div class="col">
+                <h1 class="fw-bold fs-1 mt-4 mb-4 block__h1--size">Blog</h1>
+              </div>
+              <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+                <h3 class="fs-3">
+                  Infrequent writing about things like
+                  <a
+                    href="#"
+                    class="block__link--underline block__link--animation"
+                    >adventure</a
+                  >,
+                  <a
+                    href="#"
+                    class="block__link--underline block__link--animation"
+                    >business</a
+                  >,
+                  <a
+                    href="#"
+                    class="block__link--underline block__link--animation"
+                    >code</a
+                  >,
+                  <a
+                    href="#"
+                    class="block__link--underline block__link--animation"
+                    >design</a
+                  >
+                  ,
+                  <a
+                    href="#"
+                    class="block__link--underline block__link--animation"
+                    >making</a
+                  >
+                  ,<a
+                    href="#"
+                    class="block__link--underline block__link--animation"
+                    >musings</a
+                  >
+                  ,
+                  <a
+                    href="#"
+                    class="block__link--underline block__link--animation"
+                    >updates</a
+                  >,<a
+                    href="#"
+                    class="block__link--underline block__link--animation"
+                    >worklife</a
+                  >
+                  , and more.
+                </h3>
+              </div>
+            </div>
+            <div class="thick-border"></div>
+            <div class="row">
+              <div class="col-xs-12 col-md-2"></div>
+              <div class="col-xs-12 col-md-10">
+                <div
+                  class="row row-cols-1 g-4 mt-1 d-flex justify-content-center mt-3"
+                >
+                  <div
+                    class="row justify-content-center align-items-center p-3"
+                  >
+                    <div class="thick-border mb-4"></div>
+                    <div class="col-12 col-md-6">
+                      <p class="text-muted">
+                        <span class="block__link--animation">WORKLIFE</span>
+                      </p>
+                      <p class="fs-5">
+                        <span class="block__link--animation"
+                          >/ Notes to Self Series</span
+                        >
+                      </p>
+                      <h5 class="card-title fw-bold fs-4 fs-md-3">
+                        <span class="block__link--animation">On Layoffs</span>
+                      </h5>
+                      <p class="description-text">
+                        A generational divide in responses to layoffs, and some
+                        hard lessons from past experiences.
+                      </p>
+                      <p class="text-muted">2 minute read</p>
+                    </div>
+                    <div class="col-md-6"></div>
+                  </div>
+                  <hr />
+                </div>
+                <div
+                  class="row row-cols-1 g-4 mt-1 d-flex justify-content-center mt-3"
+                >
+                  <div
+                    class="row justify-content-center align-items-center p-3"
+                  >
+                    <div class="col-12 col-md-6">
+                      <p class="text-muted">
+                        <span class="block__link--animation">WORKLIFE</span>
+                      </p>
+                      <p class="fs-5">
+                        <span class="block__link--animation"
+                          >/ Notes to Self Series</span
+                        >
+                      </p>
+                      <h5 class="card-title fw-bold fs-4 fs-md-3">
+                        <span class="block__link--animation"
+                          >On Personal Knowledge Management (PKM)
+                        </span>
+                      </h5>
+                      <p class="description-text">
+                        Writing notes has become an extension of how I think,
+                        and an integral part of my workday and career. Here, I
+                        detail my PKM process and tools.
+                      </p>
+                      <p class="text-muted">7 minute read</p>
+                    </div>
+                    <div class="col-md-6"></div>
+                  </div>
+                  <hr />
+                </div>
+                <div
+                  class="row row-cols-1 g-4 mt-1 d-flex justify-content-center mt-3"
+                >
+                  <div
+                    class="row justify-content-center align-items-center p-3"
+                  >
+                    <div class="col-12 col-md-6">
+                      <p class="text-muted">
+                        <span class="block__link--animation">MUSINGS</span>
+                      </p>
+                      <p class="fs-5">
+                        <span class="block__link--animation"
+                          >/ Notes to Self Series</span
+                        >
+                      </p>
+                      <h5 class="card-title fw-bold fs-4 fs-md-3">
+                        <span class="block__link--animation"
+                          >Note to Self—a 2023 writing experiment
+                        </span>
+                      </h5>
+                      <p class="description-text">
+                        Welcome to “Note to Self”—my open, in-public experiment
+                        in writing shorter, less polished, less developed ideas
+                        that mimic my personal notes on a particular subject.
+                      </p>
+                      <p class="text-muted">3 minute read</p>
+                    </div>
+                    <div class="col-md-6"></div>
+                  </div>
+                  <hr />
+                </div>
+                <div
+                  class="row row-cols-1 g-4 mt-1 d-flex justify-content-center mt-3"
+                >
+                  <div
+                    class="row justify-content-center align-items-center p-3"
+                  >
+                    <div class="col-12 col-md-6">
+                      <p class="text-muted">
+                        <span class="block__link--animation">Adventure</span>
+                      </p>
+                      <h5 class="card-title fw-bold fs-4 fs-md-3">
+                        <span class="block__link--animation">
+                          Talking to a giant tanker from a little plastic boat
+                        </span>
+                      </h5>
+                      <p class="description-text">
+                        It’s kayaking season here in New England, and as I was
+                        returning to the water this year I realized I needed to
+                        reacquaint myself with VHF radio usage. So I’m going to
+                        share this story from last summer in hopes that it helps
+                        some other kayakers in a similar situation, as I haven’t
+                        found a ton…
+                      </p>
+                      <p class="text-muted">9 minute read</p>
+                    </div>
+                    <div class="col-md-6">
+                      <img
+                        src="https://www.turnwall.com/wp-content/uploads/2014/06/IMG_4040-360x240.jpg"
+                        class="post-img"
+                        alt="admithub"
+                      />
+                    </div>
+                  </div>
+                  <hr />
+                </div>
+                <div
+                  class="row row-cols-1 g-4 mt-1 d-flex justify-content-center mt-3"
+                >
+                  <div
+                    class="row justify-content-center align-items-center p-3"
+                  >
+                    <div class="col-12 col-md-6">
+                      <p class="text-muted">
+                        <span class="block__link--animation">DESIGN</span>
+                      </p>
+                      <h5 class="card-title fw-bold fs-4 fs-md-3">
+                        <span class="block__link--animation">
+                          Does business need design? A talk at Scout Studio
+                        </span>
+                      </h5>
+                      <p class="description-text">
+                        I recently gave a talk on the topic of measuring the ROI
+                        and impact of design practices in business for Scout
+                        Studio at Northeastern University. Here are some
+                        post-talk thoughts.
+                      </p>
+                      <p class="text-muted">3 minute read</p>
+                    </div>
+                    <div class="col-md-6">
+                      <img
+                        src="https://www.turnwall.com/wp-content/uploads/2018/03/Screen-Shot-2021-05-06-at-11.50.14-PM-e1623952859495-360x240.jpg"
+                        class="post-img"
+                        alt="admithub"
+                      />
+                    </div>
+                  </div>
+                  <hr />
+                </div>
+                <div
+                  class="row row-cols-1 g-4 mt-1 d-flex justify-content-center mt-3"
+                >
+                  <div
+                    class="row justify-content-center align-items-center p-3"
+                  >
+                    <div class="col-12 col-md-6">
+                      <p class="text-muted">
+                        <span class="block__link--animation">Case Study</span>
+                      </p>
+                      <h5 class="card-title fw-bold fs-4 fs-md-3">
+                        <span class="block__link--animation">
+                          AdmitHub AI Suite
+                        </span>
+                      </h5>
+                      <p class="description-text">
+                        I was recently invited to speak at an event
+                        called&nbsp;Rapha 5×5: Intervals on Design at Fresh
+                        Tilled Soil, a local design consultancy. It’s a
+                        traveling series of design talks that Rapha runs in
+                        different cities, and here’s the schtick: “5×5:
+                        Intervals on Design, a rapid-fire design talk where five
+                        creatives will talk for five minutes…
+                      </p>
+                      <p class="text-muted">9 minute read</p>
+                    </div>
+                    <div class="col-md-6">
+                      <img
+                        src="https://www.turnwall.com/wp-content/uploads/2016/10/Artboard-1-360x240.png"
+                        class="post-img"
+                        alt="admithub"
+                      />
+                    </div>
+                  </div>
+                  <hr />
+                </div>
+                <div
+                  class="row row-cols-1 g-4 mt-1 d-flex justify-content-center mt-3"
+                >
+                  <div
+                    class="row justify-content-center align-items-center p-3"
+                  >
+                    <div class="col-12 col-md-6">
+                      <p class="text-muted">
+                        <span class="block__link--animation">MAKING</span>
+                      </p>
+                      <h5 class="card-title fw-bold fs-4 fs-md-3">
+                        <span class="block__link--animation">
+                          Laser-etched Tap Handles
+                        </span>
+                      </h5>
+                      <p class="description-text">
+                        I recently had the honor of being the best man in my
+                        best friend’s wedding, which is an occasion that calls
+                        for a unique gift. The groom and I are both pretty big
+                        into homebrewing, and he kegs, so my own fiancé
+                        recommended that I get him some tap handles. Well, I
+                        couldn’t find any out there…
+                      </p>
+                      <p class="text-muted">2 minute read</p>
+                    </div>
+                    <div class="col-md-6">
+                      <img
+                        src="https://www.turnwall.com/wp-content/uploads/2014/06/handles-picture-web-360x240.jpg"
+                        class="post-img"
+                        alt="admithub"
+                      />
+                    </div>
+                  </div>
+                  <hr />
+                </div>
+              </div>
+            </div>
+            <hr />
           </section>
         </main>
       </div>
@@ -268,8 +873,8 @@
             <div class="col-md-2">
               <p>
                 <a
-                  href="https://www.turnwall.com"
-                  class="fs-5 section-link footer-txt-color"
+                  href="#"
+                  class="footer__link--animation block__link--underline footer-txt-color fs-4"
                   >Alex Turnwall</a
                 >
               </p>
@@ -278,13 +883,13 @@
               <p>
                 I’m a Boston-based designer, developer, and strategist. I
                 <a
-                  href="https://www.turnwall.com/about/#consulting"
-                  class="section-link footer-txt-color"
+                  href="#"
+                  class="footer__link--animation block__link--underline footer-txt-color"
                   >consult</a
                 >,
                 <a
-                  href="https://www.turnwall.com/articles/"
-                  class="section-link footer-txt-color"
+                  href="#"
+                  class="footer__link--animation block__link--underline footer-txt-color"
                   >write</a
                 >, and speak about design, entrepreneurship and technology. You
                 might also find me biking, kayaking, skiing, woodworking, or
@@ -296,15 +901,15 @@
               <p class="small">
                 Email
                 <a
-                  href="mailto:alex@turnwall.com"
-                  class="section-link footer-txt-color"
+                  href="#"
+                  class="footer__link--animation block__link--underline footer-txt-color"
                   >alex@turnwall.com</a
                 >
                 <br />LinkedIn
                 <a
-                  href="https://www.linkedin.com/in/alexturnwall/"
+                  href="#"
                   target="_blank"
-                  class="section-link footer-txt-color"
+                  class="footer__link--animation block__link--underline footer-txt-color"
                   >/alexturnwall</a
                 >
               </p>
