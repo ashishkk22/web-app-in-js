@@ -112,7 +112,9 @@ hr {
 .block__h1--size {
   font-size: 3rem !important;
 }
-
+.about__img--size {
+  width: 14rem;
+}
 @media screen and (min-width: 1050px) {
   .block__h1--size {
     font-size: 6.5rem !important;
