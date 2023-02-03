@@ -5,41 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/bootstrap.css    " />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
     <title>Alex Turnwall</title>
   </head>
   <body>
-    <div class="container-fluid min-vh-100">
+    <div class="container-fluid min-vh-100" id="main-container">
       <div class="container-lg">
-        <header class="header__container shadow">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <!-- <div class="container-fluid"> -->
-            <a class="navbar-brand fw-bold" href="#">Alex Turnwall</a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mt-3 ms-2 mb-lg-0">
-                <li class="nav__item">
-                  <a class="nav-link" aria-current="page" href="#work-page"
-                    >Work</a
+        <header
+          class="header__container w-100 shadow pb-3 pb-sm-3 pb-lg-0 pt-1 pt-sm-1 pt-lg-0"
+          id="navbar"
+        >
+          <div class="container-lg">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div
+                class="container-fluid navbar__div--size ms-5 me-5 d-flex justify-content-sm-around"
+              >
+                <a class="navbar-brand fw-bold" href="#">Alex Turnwall</a>
+                <button
+                  class="navbar-toggler p-0"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarText"
+                  aria-controls="navbarText"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                  <ul
+                    class="navbar-nav me-auto mt-3 mb-lg-0 navbar__dropdown--position"
                   >
-                  <div class="nav__underline"></div>
-                </li>
-                <li class="nav__item">
-                  <a class="nav-link" href="#blog-page">Blog</a>
-                  <div class="nav__underline"></div>
-                </li>
-                <li class="nav__item">
-                  <a class="nav-link" href="#about-page">About</a>
-                  <div class="nav__underline"></div>
-                </li>
-              </ul>
-              <!-- </div> -->
-            </div>
-          </nav>
-          <div class="navbar__underline"></div>
+                    <li class="navbar__list">
+                      <a
+                        class="nav-link"
+                        aria-current="page"
+                        href="#"
+                        id="work-link"
+                        >Work</a
+                      >
+                      <div class="navbar__list--underline"></div>
+                    </li>
+                    <li class="navbar__list">
+                      <a class="nav-link" href="# " id="blog-link">Blog</a>
+                      <div class="navbar__list--underline"></div>
+                    </li>
+                    <li class="navbar__list">
+                      <a class="nav-link" href="# " id="about-link">About</a>
+                      <div class="navbar__list--underline"></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
         </header>
-
         <main class="main__container">
           <section name="home-page">
             <div class="container-lg">
@@ -56,7 +83,7 @@
                 </h3>
               </div>
               <div class="d-md-flex justify-content-center">
-                <div class="col-md-5 m-md-5 mt-3 mb-3 description-text">
+                <div class="col-md-5 m-md-5 mt-3 mb-3 block__text--light">
                   I've spent over a decade working with teams to ship products
                   that delight users and advance organizations’ goals.
                   <a
@@ -66,7 +93,7 @@
                     Learn More</a
                   >
                 </div>
-                <div class="col-md-5 m-md-5 mt-3 mb-3 description-text">
+                <div class="col-md-5 m-md-5 mt-3 mb-3 block__text--light">
                   Staff UX Designer at Verily. Previously Head of Design
                   <a
                     href="#"
@@ -82,7 +109,7 @@
                 </div>
               </div>
             </div>
-            <div class="thick-border"></div>
+            <hr class="mainDiv__hr--thick" />
             <div class="row">
               <div class="col-xs-12 col-md-2">
                 <div class="postBlock__side--rotate">
@@ -187,7 +214,7 @@
                 </div>
               </div>
             </div>
-            <div class="thick-border"></div>
+            <hr class="mainDiv__hr--thick" />
             <div class="row">
               <div class="col-xs-12 col-md-2">
                 <div class="postBlock__side--rotate">
@@ -211,13 +238,13 @@
                   <div
                     class="row justify-content-center align-items-center p-3"
                   >
-                    <div class="thick-border mb-4"></div>
+                    <hr class="mainDiv__hr--thick mb-4" />
                     <div class="col-12 col-md-9">
                       <p class="text-muted">DESIGN</p>
                       <h5 class="card-title fw-bold fs-4 fs-md-3">
                         Bicycles are my design inspiration—a Rapha 5×5 talk
                       </h5>
-                      <p class="description-text">
+                      <p class="block__text--light">
                         I was recently invited to speak at an event
                         called&nbsp;Rapha 5×5: Intervals on Design at Fresh
                         Tilled Soil, a local design consultancy. It’s a
@@ -231,7 +258,7 @@
                     <div class="col-md-3">
                       <img
                         src="https://www.turnwall.com/wp-content/uploads/2016/10/Artboard-1-360x240.png"
-                        class="post-img"
+                        class="block__postImg--size"
                         alt="admithub"
                       />
                     </div>
@@ -249,7 +276,7 @@
                       <h5 class="card-title fw-bold fs-4 fs-md-3">
                         Talking to a giant tanker from a little plastic boat
                       </h5>
-                      <p class="description-text">
+                      <p class="block__text--light">
                         It’s kayaking season here in New England, and as I was
                         returning to the water this year I realized I needed to
                         reacquaint myself with VHF radio usage. So I’m going to
@@ -262,7 +289,7 @@
                     <div class="col-md-3">
                       <img
                         src="https://www.turnwall.com/wp-content/uploads/2014/06/IMG_4040-360x240.jpg"
-                        class="post-img"
+                        class="block__postImg--size"
                         alt="admithub"
                       />
                     </div>
@@ -282,7 +309,7 @@
                       <h5 class="card-title fw-bold fs-4 fs-md-3">
                         AdmitHub AI Suite
                       </h5>
-                      <p class="description-text">
+                      <p class="block__text--light">
                         I was recently invited to speak at an event
                         called&nbsp;Rapha 5×5: Intervals on Design at Fresh
                         Tilled Soil, a local design consultancy. It’s a
@@ -296,7 +323,7 @@
                     <div class="col-md-3">
                       <img
                         src="https://www.turnwall.com/wp-content/uploads/2016/10/Artboard-1-360x240.png"
-                        class="post-img"
+                        class="block__postImg--size"
                         alt="admithub"
                       />
                     </div>
@@ -318,19 +345,16 @@
                 </h3>
               </div>
             </div>
-            <div class="thick-border"></div>
+            <hr class="mainDiv__hr--thick" />
             <div class="row">
               <div class="col-xs-12 col-md-2 mt-3">
                 <div class="d-flex flex-column">
                   <div class="mt-1 mb-2 fw-bold fs-5">Case Studies</div>
-                  <div>
-                    <a
-                      href="#"
-                      class="work__link--reset fw-normal w-auto p-0 m-0 fs-6"
-                      >Longform explorations of UX process and design
-                      projects</a
-                    >
-                  </div>
+                  <a
+                    href="#"
+                    class="work__link--reset fw-normal w-auto p-0 m-0 fs-6"
+                    >Longform explorations of UX process and design projects</a
+                  >
                 </div>
               </div>
               <div class="col-xs-12 col-md-10">
@@ -419,7 +443,7 @@
                 </div>
               </div>
             </div>
-            <div class="thick-border"></div>
+            <hr class="mainDiv__hr--thick" />
             <div class="row">
               <div class="col-xs-12 col-md-2 mt-3">
                 <div class="d-flex flex-column">
@@ -440,7 +464,7 @@
                       <img
                         src="https://www.turnwall.com/wp-content/uploads/2021/05/lp-hero-750x383.png"
                         alt="love pop"
-                        class="image-fluid block__img--color m-3"
+                        class="image-fluid work__projectImg--color m-3"
                       />
                       <div class="card-body">
                         <p class="card-text">Lovepop</p>
@@ -452,7 +476,7 @@
                       <img
                         src="https://www.turnwall.com/wp-content/uploads/2019/02/bs-overview-hero-750x387.png"
                         alt="BevSpot Overview"
-                        class="image-fluid block__img--color m-3"
+                        class="image-fluid work__projectImg--color m-3"
                       />
                       <div class="card-body">
                         <p class="card-text">BevSpot Overview</p>
@@ -464,7 +488,7 @@
                       <img
                         src="https://www.turnwall.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-18-at-6.57.06-PM-750x415.png"
                         alt="MA Scenic Byways"
-                        class="image-fluid block__img--color m-3"
+                        class="image-fluid work__projectImg--color m-3"
                       />
                       <div class="card-body">
                         <p class="card-text">MA Scenic Byways</p>
@@ -476,7 +500,7 @@
                       <img
                         src="https://www.turnwall.com/wp-content/uploads/2013/07/grubstreet.gif"
                         alt=" GrubStreet "
-                        class="image-fluid block__img--color m-3"
+                        class="image-fluid work__projectImg--color m-3"
                       />
                       <div class="card-body">
                         <p class="card-text">GrubStreet</p>
@@ -488,7 +512,7 @@
                       <img
                         src="https://www.turnwall.com/wp-content/uploads/2013/07/newsletter-folded-750x528.jpg"
                         alt="CAMD @ Northeastern "
-                        class="image-fluid block__img--color m-3"
+                        class="image-fluid work__projectImg--color m-3"
                       />
                       <div class="card-body">
                         <p class="card-text">CAMD @ Northeastern</p>
@@ -500,7 +524,7 @@
                       <img
                         src="https://www.turnwall.com/wp-content/uploads/2009/07/idea.gif"
                         alt="Logos"
-                        class="image-fluid block__img--color m-3"
+                        class="image-fluid work__projectImg--color m-3"
                       />
                       <div class="card-body">
                         <p class="card-text">Logos</p>
@@ -512,7 +536,7 @@
                       <img
                         src="https://www.turnwall.com/wp-content/uploads/2013/07/1-3device_0-750x528.jpg"
                         alt=" News @ Northeastern "
-                        class="image-fluid block__img--color m-3"
+                        class="image-fluid work__projectImg--color m-3"
                       />
                       <div class="card-body">
                         <p class="card-text">News @ Northeastern</p>
@@ -524,7 +548,7 @@
                       <img
                         src="https://www.turnwall.com/wp-content/uploads/2013/07/site1-750x528.jpg"
                         alt=" Various Websites "
-                        class="image-fluid block__img--color m-3"
+                        class="image-fluid work__projectImg--color m-3"
                       />
                       <div class="card-body">
                         <p class="card-text">Various Websites</p>
@@ -536,7 +560,7 @@
                       <img
                         src="https://www.turnwall.com/wp-content/uploads/2013/07/acadia-shirt-750x528.jpg"
                         alt=" Various Illustrations "
-                        class="image-fluid block__img--color m-3"
+                        class="image-fluid work__projectImg--color m-3"
                       />
                       <div class="card-body">
                         <p class="card-text">Various Illustrations</p>
@@ -548,7 +572,7 @@
                       <img
                         src="https://www.turnwall.com/wp-content/uploads/2013/07/trainers_kit-750x500.jpg"
                         alt=" Various Print Projects "
-                        class="image-fluid block__img--color m-3"
+                        class="image-fluid work__projectImg--color m-3"
                       />
                       <div class="card-body">
                         <p class="card-text">Various Print Projects</p>
@@ -560,7 +584,7 @@
                       <img
                         src="https://www.turnwall.com/wp-content/uploads/2013/07/01logo1-750x528.jpg"
                         alt=" APE SYSTEM "
-                        class="image-fluid block__img--color m-3"
+                        class="image-fluid work__projectImg--color m-3"
                       />
                       <div class="card-body">
                         <p class="card-text">APE SYSTEM</p>
@@ -572,7 +596,7 @@
             </div>
             <hr />
           </section>
-          <section name="work-page" id="blog-page">
+          <section name="blog-page" id="blog-page">
             <div class="container-lg mb-5 mt-5">
               <div class="col">
                 <h1 class="fw-bold fs-1 mt-4 mb-4 block__h1--size">Blog</h1>
@@ -625,7 +649,7 @@
                 </h3>
               </div>
             </div>
-            <div class="thick-border"></div>
+            <hr class="mainDiv__hr--thick" />
             <div class="row">
               <div class="col-xs-12 col-md-2"></div>
               <div class="col-xs-12 col-md-10">
@@ -635,7 +659,7 @@
                   <div
                     class="row justify-content-center align-items-center p-3"
                   >
-                    <div class="thick-border mb-4"></div>
+                    <hr class="mainDiv__hr--thick mb-4" />
                     <div class="col-12 col-md-6">
                       <p class="text-muted">
                         <span class="block__link--animation">WORKLIFE</span>
@@ -648,7 +672,7 @@
                       <h5 class="card-title fw-bold fs-4 fs-md-3">
                         <span class="block__link--animation">On Layoffs</span>
                       </h5>
-                      <p class="description-text">
+                      <p class="block__text--light">
                         A generational divide in responses to layoffs, and some
                         hard lessons from past experiences.
                       </p>
@@ -678,7 +702,7 @@
                           >On Personal Knowledge Management (PKM)
                         </span>
                       </h5>
-                      <p class="description-text">
+                      <p class="block__text--light">
                         Writing notes has become an extension of how I think,
                         and an integral part of my workday and career. Here, I
                         detail my PKM process and tools.
@@ -709,7 +733,7 @@
                           >Note to Self—a 2023 writing experiment
                         </span>
                       </h5>
-                      <p class="description-text">
+                      <p class="block__text--light">
                         Welcome to “Note to Self”—my open, in-public experiment
                         in writing shorter, less polished, less developed ideas
                         that mimic my personal notes on a particular subject.
@@ -735,7 +759,7 @@
                           Talking to a giant tanker from a little plastic boat
                         </span>
                       </h5>
-                      <p class="description-text">
+                      <p class="block__text--light">
                         It’s kayaking season here in New England, and as I was
                         returning to the water this year I realized I needed to
                         reacquaint myself with VHF radio usage. So I’m going to
@@ -748,7 +772,7 @@
                     <div class="col-md-6">
                       <img
                         src="https://www.turnwall.com/wp-content/uploads/2014/06/IMG_4040-360x240.jpg"
-                        class="post-img"
+                        class="block__postImg--size"
                         alt="admithub"
                       />
                     </div>
@@ -770,7 +794,7 @@
                           Does business need design? A talk at Scout Studio
                         </span>
                       </h5>
-                      <p class="description-text">
+                      <p class="block__text--light">
                         I recently gave a talk on the topic of measuring the ROI
                         and impact of design practices in business for Scout
                         Studio at Northeastern University. Here are some
@@ -781,7 +805,7 @@
                     <div class="col-md-6">
                       <img
                         src="https://www.turnwall.com/wp-content/uploads/2018/03/Screen-Shot-2021-05-06-at-11.50.14-PM-e1623952859495-360x240.jpg"
-                        class="post-img"
+                        class="block__postImg--size"
                         alt="admithub"
                       />
                     </div>
@@ -803,7 +827,7 @@
                           AdmitHub AI Suite
                         </span>
                       </h5>
-                      <p class="description-text">
+                      <p class="block__text--light">
                         I was recently invited to speak at an event
                         called&nbsp;Rapha 5×5: Intervals on Design at Fresh
                         Tilled Soil, a local design consultancy. It’s a
@@ -817,7 +841,7 @@
                     <div class="col-md-6">
                       <img
                         src="https://www.turnwall.com/wp-content/uploads/2016/10/Artboard-1-360x240.png"
-                        class="post-img"
+                        class="block__postImg--size"
                         alt="admithub"
                       />
                     </div>
@@ -839,7 +863,7 @@
                           Laser-etched Tap Handles
                         </span>
                       </h5>
-                      <p class="description-text">
+                      <p class="block__text--light">
                         I recently had the honor of being the best man in my
                         best friend’s wedding, which is an occasion that calls
                         for a unique gift. The groom and I are both pretty big
@@ -852,7 +876,7 @@
                     <div class="col-md-6">
                       <img
                         src="https://www.turnwall.com/wp-content/uploads/2014/06/handles-picture-web-360x240.jpg"
-                        class="post-img"
+                        class="block__postImg--size"
                         alt="admithub"
                       />
                     </div>
@@ -864,19 +888,15 @@
           </section>
           <section name="about-page" id="about-page">
             <div class="container-sm mb-5 mt-5 row">
-              <!-- <div class=""> -->
               <div class="col-sm-8 col-md-7">
-                <!-- <div class="col"> -->
                 <h1 class="fw-bold fs-1 mb-4 block__h1--size">About</h1>
-                <!-- </div> -->
-                <!-- <div class="col-12 col-sm-10 col-md-8 col-lg-6"> -->
                 <h3 class="fs-3 mt-2">
                   Designer, developer, and product strategist trying to move the
                   needle.
                 </h3>
               </div>
-              <div class="col-md-3"></div>
-              <div class="col-xs-4 col-sm-3 col-md-2">
+              <div class="col-md-2"></div>
+              <div class="col-xs-4 col-sm-3 col-md-3">
                 <img
                   src="https://www.turnwall.com/wp-content/themes/turnwall_theme/images/hire/headshot.png"
                   alt="profile"
@@ -884,27 +904,27 @@
                 />
               </div>
             </div>
-            <div class="thick-border"></div>
+            <hr class="mainDiv__hr--thick" />
             <div class="row mt-4">
               <div class="col-xs-12 col-md-2"></div>
               <div class="col-xs-12 col-md-6">
-                <p class="description-text">
+                <p class="block__text--light">
                   I’ve been called a ‘pragmatic’ designer.<br />I take that as a
                   compliment.
                 </p>
-                <p class="description-text">
+                <p class="block__text--light">
                   My professional work slants towards product design that can
                   make a measurable impact. Usability over style. Stylish when
                   called for.
                 </p>
-                <p class="description-text">
+                <p class="block__text--light">
                   Learning from your customers and shipping delightful, yet
                   useful tools for them is both rewarding and challenging, which
                   is why I've been drawn to working with early products,
                   especially those where you can get to know your users
                   personally.
                 </p>
-                <p class="description-text">
+                <p class="block__text--light">
                   I’ve had the privilege of working with some great teams on
                   some truly impactful products, and have learned a thing or two
                   along the way. I bring that experience to new ventures and try
@@ -915,13 +935,13 @@
                     >writing</a
                   >.
                 </p>
-                <p class="description-text">
+                <p class="block__text--light">
                   I tend to think about design like a founder, because I’ve been
                   one. Balancing process and instinct, the goal is to find
                   harmony between user delight and business strategy, as fast as
                   you can deliver quality.
                 </p>
-                <p class="description-text">
+                <p class="block__text--light">
                   If this seems like your cup of tea, I'd be pleased to chat
                   about your project needs. My availability is
                   <a
@@ -930,10 +950,10 @@
                     >below</a
                   >.
                 </p>
-                <p class="discription-text">-Alex-</p>
+                <p class="block__text--light">-Alex-</p>
               </div>
               <div class="col-xs-12 col-md-4">
-                <p class="description-text">
+                <p class="block__text--light">
                   <a
                     href="#"
                     class="block__link--animation block__link--underline"
@@ -949,62 +969,385 @@
                 </p>
               </div>
             </div>
-            <hr />
+            <div class="row mt-4">
+              <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-xs-12 col-md-10">
+                  <hr class="mainDiv__hr--thick" />
+                  <p class="text-muted mt-3">MODUS OPERANDI</p>
+                  <div class="col-xs-12 col-md-9 col-lg-11">
+                    <h2 class="about__heading--text fs-2">
+                      I believe that businesses can make a positive impact on
+                      people’s lives through the thoughtful application of
+                      technology and design.
+                    </h2>
+                  </div>
+                  <div class="col-xs-12 col-md-7">
+                    <p class="block__text--light fs-4">
+                      I’m not particularly picky about my role or title, but I
+                      am selective about the teams I work with. My approach is
+                      informed by these beliefs, and I try to work with teams
+                      that share them:
+                    </p>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 mt-1">
+                      <span class="fs-2 about__introNum--size">1</span>
+                      <h4 class="fw-bold">
+                        Design is a measurable strategic asset.
+                      </h4>
+                      <p class="mt-2 fs-6 fs-md-5">
+                        Good design can contribute directly to an organization's
+                        bottom line. According to multiple studies,
+                        organizations that value design consistently perform
+                        stronger on virtually all financial measures.
+                      </p>
+                    </div>
+                    <div class="col-md-4 mt-1">
+                      <span class="fs-2 about__introNum--size">2</span>
+                      <h4 class="fw-bold">Good design can make life better.</h4>
+                      <p class="mt-2 fs-6 fs-md-5">
+                        From life-saving procedural instructions, to an
+                        easier-to-read ballot, to a more ergonomic product:
+                        design that we interact with everyday has the potential
+                        to make people's lives better (or worse). It is not
+                        simply an aesthetic treatment.
+                      </p>
+                    </div>
+                    <div class="col-md-4 mt-1">
+                      <span class="fs-2 about__introNum--size">3</span>
+                      <h4 class="fw-bold">
+                        Diversity in collaboration yields the best results.
+                      </h4>
+                      <p class="mt-2 fs-6 fs-md-5">
+                        Our audiences are global. We live in an interconnected
+                        world where no one person has all of the skills to make
+                        most of the products we use everyday. We need to work
+                        with partners who are diverse in background and
+                        discipline to create better products, services and
+                        organizations for the future.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 mt-1">
+                      <span class="fs-2 about__introNum--size">4</span>
+                      <h4 class="fw-bold">Technology should feel easy.</h4>
+                      <p class="mt-2 fs-6 fs-md-5">
+                        Every user is different and one size should not fit all.
+                        The goal of interaction design is to create products or
+                        interfaces that will work best for an intended user.
+                        That means it might have to work equally well for many
+                        users with many different technologies—today's tech has
+                        to be flexible and adaptable.
+                      </p>
+                    </div>
+                    <div class="col-md-4 mt-1">
+                      <span class="fs-2 about__introNum--size">5</span>
+                      <h4 class="fw-bold">
+                        Marketing can be a force for good.
+                      </h4>
+                      <p class="mt-2 fs-6 fs-md-5">
+                        Understanding consumer behavior and knowing how to learn
+                        what a customer wants can work towards the promotion of
+                        a social campaign just as effectively as it can promote
+                        a product. Harnessing that power for the right reasons
+                        is a worthwhile endeavor.
+                      </p>
+                    </div>
+                    <div class="col-md-4 mt-1">
+                      <span class="fs-2 about__introNum--size">6</span>
+                      <h4 class="fw-bold">
+                        Great brands aren’t just skin-deep.
+                      </h4>
+                      <p class="mt-2 fs-6 fs-md-5">
+                        You can’t throw a new logo and website up and call it a
+                        brand refresh (that is, in fact, an <em>identity</em>).
+                        Branding touches every facet of an organization and is
+                        reflected in everything an organization does, meaning
+                        corporate ethos and responsibility are more important
+                        than the design.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 mt-1">
+                      <span class="fs-2 about__introNum--size">7</span>
+                      <h4 class="fw-bold">
+                        Trusting relationships produce better work, faster.
+                      </h4>
+                      <p class="mt-2 fs-6 fs-md-5">
+                        You trust me, I trust you; enough so that we both give
+                        honest opinions. This is how iteration produces better
+                        results, faster. Without this trust, it's hard to
+                        produce meaningful results. Trust takes effort, but it's
+                        worth it.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-xs-12 col-md-10">
+                  <hr class="mainDiv__hr--thick" />
+                  <p class="text-muted mt-4">EXPERIENCE</p>
+                  <div class="col-xs-12 col-md-8">
+                    <h2 class="about__heading--text fs-2">
+                      For over a decade, I’ve … helped launch and scale
+                      businesses, worked at a studio (and started one), taught
+                      at a university’s design school, and consulted with
+                      organizations of all sorts.
+                    </h2>
+                  </div>
+                  <div class="row mt-5">
+                    <div class="col-md-4 mt-1">
+                      <h4 class="fw-bold">I design and code.</h4>
+                      <p class="mt-2 fs-5 block__text--light">
+                        I've spent years driving design and technical projects
+                        from start to finish on a variety of very different
+                        teams. I've managed and contributed to projects for
+                        startups, universities, large international
+                        corporations, medical and research institutions, and
+                        government agencies.
+                      </p>
+                    </div>
+                    <div class="col-md-4 mt-1">
+                      <h4 class="fw-bold">I teach.</h4>
+                      <p class="mt-2 fs-5 block__text--light">
+                        I’ve taught at Northeastern’s design program, now I
+                        volunteer to help young designers and entrepreneurs
+                        learn through design and technology. I've spend a good
+                        deal of time thinking about design in the classroom.
+                        This strengthens my practice just as much as client work
+                        impacts my teaching.
+                      </p>
+                    </div>
+                    <div class="col-md-4 mt-1">
+                      <h4 class="fw-bold">I’m an entrepreneur.</h4>
+                      <p class="mt-2 fs-5 block__text--light">
+                        I've been involved in entrepreneurship for over a
+                        decade: having helped start a venture accelerator,
+                        co-founded a design studio, been on founding teams,
+                        helped startups scale through multiple rounds of VC
+                        funding, and now consult with and mentor entrepreneurs.
+                      </p>
+                    </div>
+                  </div>
+                  <h5 class="fw-bold mt-3 mb-4">Select Positions</h5>
+                  <hr />
+                  <div class="row mt-2">
+                    <div class="col-md-4">
+                      <p class="block__text--light">Verily</p>
+                    </div>
+                    <div class="col-md-4">
+                      <p class="block__text--light fs-6">Staff UX Designer</p>
+                    </div>
+                    <div class="col-md-2">
+                      <p class="block__text--light fs-6">2021-23</p>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row mt-2">
+                    <div class="col-md-4">
+                      <p class="block__text--light">Connected Proof</p>
+                    </div>
+                    <div class="col-md-4">
+                      <p class="block__text--light fs-6">
+                        Co-founder / Product &amp; Design
+                      </p>
+                    </div>
+                    <div class="col-md-2">
+                      <p class="block__text--light fs-6">2019-21</p>
+                    </div>
+                    <div class="col-md-2">
+                      <p class="block__text--light fs-6">
+                        <a
+                          href="#"
+                          class="block__link--animation block__link--underline"
+                          >Case Study</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row mt-2">
+                    <div class="col-md-4">
+                      <p class="block__text--light">AdmitHub</p>
+                    </div>
+                    <div class="col-md-4">
+                      <p class="block__text--light fs-6">Head of Design</p>
+                    </div>
+                    <div class="col-md-2">
+                      <p class="block__text--light fs-6">2018-20</p>
+                    </div>
+                    <div class="col-md-2">
+                      <p class="block__text--light fs-6">
+                        <a
+                          href="#"
+                          class="block__link--animation block__link--underline"
+                          >Case Study</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row mt-2">
+                    <div class="col-md-4">
+                      <p class="block__text--light">Lovepop</p>
+                    </div>
+                    <div class="col-md-4">
+                      <p class="block__text--light fs-6">Consultant</p>
+                    </div>
+                    <div class="col-md-2">
+                      <p class="block__text--light fs-6">2018-19</p>
+                    </div>
+                    <div class="col-md-2">
+                      <p class="block__text--light fs-6">
+                        <a
+                          href="#"
+                          class="block__link--animation block__link--underline"
+                          >Case Study</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row mt-2">
+                    <div class="col-md-4">
+                      <p class="block__text--light">BevSpot</p>
+                    </div>
+                    <div class="col-md-4">
+                      <p class="block__text--light fs-6">
+                        Chief Design Officer
+                      </p>
+                    </div>
+                    <div class="col-md-2">
+                      <p class="block__text--light fs-6">2014-18</p>
+                    </div>
+                    <div class="col-md-2">
+                      <p class="block__text--light fs-6 d-flex flex-column">
+                        <span
+                          ><a
+                            href="#"
+                            class="block__link--animation block__link--underline"
+                            >Case Study</a
+                          ></span
+                        >
+                        <span
+                          ><a
+                            href="#"
+                            class="block__link--animation block__link--underline"
+                            >Snapshot</a
+                          ></span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row mt-2">
+                    <div class="col-md-4">
+                      <p class="block__text--light">Northeastern University</p>
+                    </div>
+                    <div class="col-md-4">
+                      <p class="block__text--light fs-6">
+                        Lecturer @College of Arts, Media + Design;
+                        <br />Founding Faculty Advisor @Scout Studio
+                      </p>
+                    </div>
+                    <div class="col-md-2">
+                      <p class="block__text--light fs-6">2011-14</p>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row mt-2">
+                    <div class="col-md-4">
+                      <p class="block__text--light">Hifinit Design Studio</p>
+                    </div>
+                    <div class="col-md-4">
+                      <p class="block__text--light fs-6">
+                        Co-Founder &amp; Principal
+                      </p>
+                    </div>
+                    <div class="col-md-2">
+                      <p class="block__text--light fs-6">2010-13</p>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row mt-2">
+                    <div class="col-md-4">
+                      <p class="block__text--light">Metropolis Creative</p>
+                    </div>
+                    <div class="col-md-4">
+                      <p class="block__text--light fs-6">
+                        Designer &amp; Developer
+                      </p>
+                    </div>
+                    <div class="col-md-2">
+                      <p class="block__text--light fs-6">2008-09</p>
+                    </div>
+                  </div>
+                  <hr class="mb-5" />
+                </div>
+              </div>
+            </div>
           </section>
         </main>
       </div>
     </div>
     <footer>
-      <div class="footer-block container-fluid p-3">
-        <div class="container-lg footer-txt-color mb-5 mt-4">
+      <div class="mainDiv__footer--color container-fluid p-3">
+        <div class="container-lg footer__txt--color mb-5 mt-4">
           <div class="row mb-5 pt-2">
             <div class="col-md-2">
               <p>
                 <a
                   href="#"
-                  class="footer__link--animation block__link--underline footer-txt-color fs-4"
+                  class="footer__link--animation block__link--underline footer__txt--color fs-4"
                   >Alex Turnwall</a
                 >
               </p>
             </div>
-            <div class="col-md-5 description-text">
+            <div class="col-md-5 block__text--light">
               <p>
                 I’m a Boston-based designer, developer, and strategist. I
                 <a
                   href="#"
-                  class="footer__link--animation block__link--underline footer-txt-color"
+                  class="footer__link--animation block__link--underline footer__txt--color"
                   >consult</a
                 >,
                 <a
                   href="#"
-                  class="footer__link--animation block__link--underline footer-txt-color"
+                  class="footer__link--animation block__link--underline footer__txt--color"
                   >write</a
                 >, and speak about design, entrepreneurship and technology. You
                 might also find me biking, kayaking, skiing, woodworking, or
                 brewing.
               </p>
             </div>
-            <div class="col-md-4 description-text">
+            <div class="col-md-4 block__text--light">
               <p>Get in touch:</p>
               <p class="small">
                 Email
                 <a
                   href="#"
-                  class="footer__link--animation block__link--underline footer-txt-color"
+                  class="footer__link--animation block__link--underline footer__txt--color"
                   >alex@turnwall.com</a
                 >
                 <br />LinkedIn
                 <a
                   href="#"
                   target="_blank"
-                  class="footer__link--animation block__link--underline footer-txt-color"
+                  class="footer__link--animation block__link--underline footer__txt--color"
                   >/alexturnwall</a
                 >
               </p>
             </div>
           </div>
 
-          <div class="row p-t-2xl description-text mt-5">
+          <div class="row p-t-2xl block__text--light mt-5">
             <div class="col-md-2"></div>
             <div class="col-md-10">
               <p class="small light text-muted">
@@ -1016,6 +1359,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/app.js" defer></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

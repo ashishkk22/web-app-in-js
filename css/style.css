@@ -6,53 +6,43 @@
   box-sizing: border-box;
   font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+hr {
+  margin: 0;
+  padding: 0;
+}
 .container-lg {
   color: #242929;
-  /* line-height: 1.4; */
 }
 .container-fluid {
   background-color: #f6f8f8;
 }
 .header__container {
-  height: 5.1rem;
-  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   background-color: #f6f8f8;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   z-index: 2;
 }
-.navbar__underline {
-  border-bottom: 0.2rem solid #242929;
-}
 .main__container {
-  margin-top: 5.1rem;
+  padding-top: 5.1rem;
 }
 .navbar {
   padding-bottom: 0;
 }
-.navbar__underline {
-  border-bottom: 0.02rem solid #242929;
-}
-.nav__underline {
+.navbar__list--underline {
   padding-top: 1rem;
 }
-.nav__item:hover .nav__underline {
+.navbar__list:hover .navbar__list--underline {
   border-bottom: 0.2rem solid #242929;
 }
-hr {
-  margin: 0;
-  padding: 0;
-}
-
-.description-text {
+.block__text--light {
   font-size: 1.2rem;
   opacity: 0.8;
 }
-.thick-border {
-  border-top: 0.3rem solid #242929 !important;
+.mainDiv__hr--thick {
+  border-top: 0.3rem solid black;
 }
 .card {
   background-color: #f6f8f8;
@@ -94,19 +84,19 @@ hr {
   box-shadow: rgba(100, 100, 111, 0.2) 0rem 0.55rem 1.9rem 0rem;
   transition: box-shadow 0.3s ease;
 }
-.block__img--color {
+.work__projectImg--color {
   filter: grayscale(100%);
 }
-.block__img--color:hover {
+.work__projectImg--color:hover {
   filter: grayscale(0%);
 }
-.post-img {
+.block__postImg--size {
   width: 100%;
 }
-.footer-block {
+.mainDiv__footer--color {
   background-color: #383e3e;
 }
-.footer-txt-color {
+.footer__txt--color {
   color: #ccc;
 }
 .block__h1--size {
@@ -115,13 +105,19 @@ hr {
 .about__img--size {
   width: 14rem;
 }
+.about__heading--text {
+  font-weight: 700;
+}
+.about__introNum--size {
+  font-weight: 700;
+}
 @media screen and (min-width: 1050px) {
   .block__h1--size {
     font-size: 6.5rem !important;
   }
 }
 @media screen and (max-width: 768px) {
-  .post-img {
+  .block__postImg--size {
     width: 19rem;
   }
 }
@@ -131,5 +127,13 @@ hr {
     z-index: 1;
     margin-top: 7rem;
     transform: rotate(91deg);
+  }
+}
+@media screen and (max-width: 992px) {
+  .navbar__div--size {
+    width: 100vw;
+  }
+  .navbar__dropdown--position {
+    margin-left: 2rem !important;
   }
 }
