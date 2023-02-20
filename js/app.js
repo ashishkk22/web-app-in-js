@@ -1,29 +1,28 @@
-//all the links elements
-const workLink = document.getElementById("work-link");
-const blogLink = document.getElementById("blog-link");
-const aboutLink = document.getElementById("about-link");
-
 //all the page elements
 const workPageDiv = document.getElementById("work-page");
 const blogPageDiv = document.getElementById("blog-page");
 const aboutPageDiv = document.getElementById("about-page");
 
+//nav and nav border element
 const navbar = document.getElementById("navbar");
 const navbarBorder = document.getElementById("nav_border");
 
-workLink.addEventListener("click", e => {
+navbar.addEventListener("click", e => {
   e.preventDefault();
-  workPageDiv.scrollIntoView();
-});
-
-blogLink.addEventListener("click", e => {
-  e.preventDefault();
-  blogPageDiv.scrollIntoView();
-});
-
-aboutLink.addEventListener("click", e => {
-  e.preventDefault();
-  aboutPageDiv.scrollIntoView();
+  if (e.target === e.currentTarget) return;
+  switch (e.target.id) {
+    case "work-link":
+      workPageDiv.scrollIntoView();
+      break;
+    case "blog-link":
+      blogPageDiv.scrollIntoView();
+      break;
+    case "about-link":
+      aboutPageDiv.scrollIntoView();
+      break;
+    default:
+      break;
+  }
 });
 
 let scroll_change;
