@@ -55,7 +55,7 @@ window.onscroll = function () {
     navbar.classList.add("d-none");
   }
   //if scroll up then value negative so show
-  if (negative_accumulated_change < -250) {
+  if (negative_accumulated_change < -250 || currentScrollPos < 150) {
     navbar.classList.remove("d-none");
   }
   prevScrollPos = currentScrollPos;
