@@ -8,6 +8,9 @@ const workPageDiv = document.getElementById("work-page");
 const blogPageDiv = document.getElementById("blog-page");
 const aboutPageDiv = document.getElementById("about-page");
 
+const navbar = document.getElementById("navbar");
+const navbarBorder = document.getElementById("nav_border");
+
 workLink.addEventListener("click", e => {
   e.preventDefault();
   workPageDiv.scrollIntoView();
@@ -30,6 +33,16 @@ let prevScrollPos = window.pageYOffset;
 //onscroll fn is going to executed
 window.onscroll = function () {
   let currentScrollPos = window.pageYOffset;
+
+  //if near to top show bottom border else shadow
+  if (currentScrollPos < 500) {
+    navbarBorder.classList.remove("d-none");
+    navbar.classList.remove("shadow");
+  } else {
+    navbarBorder.classList.add("d-none");
+    navbar.classList.add("shadow");
+  }
+
   scroll_change = currentScrollPos - prevScrollPos;
   //changing accumulated_change
   if (scroll_change < 0) {
